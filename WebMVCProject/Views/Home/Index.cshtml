@@ -1,0 +1,151 @@
+﻿@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div>
+    <div style="text-align:center;margin-bottom:50px">Order</div>
+    <ul class="d-flex">
+        <li style="margin-right:40px;list-style-type:none">
+            <a style="text-decoration:none" href="/Order/Index">Tüm Verileri Göster</a>
+        </li>
+        <li style="margin-right:40px;list-style-type:none">
+            <input id="GetByIdOrder" placeholder="Id Giriniz" />
+            <button onclick="GetByIdOrder('GetByIdOrder')">Girilen Id ye Ait Order Getir</button>
+        </li>
+        <li style="margin-right:40px;list-style-type:none">
+            <input id="DeleteIdOrder" placeholder="Id Giriniz" />
+            <button onclick="DeleteOrder('DeleteIdOrder')">Girilen Id ye Ait Order Sil</button>
+        </li>
+        <li style="margin-right:40px;list-style-type:none">
+            <a href="/Order/AddOrder" style="text-decoration:none">Order Ekle</a>
+        </li>
+        <li style="list-style-type:none">
+            <a href="/Order/UpdateOrder" style="text-decoration:none">Order Güncelle</a>
+        </li>
+    </ul>
+</div>
+
+
+<div style="margin-top:50px">
+    <div style="text-align:center;margin-bottom:50px">Product</div>
+    <ul class="d-flex">
+        <li style="margin-right:40px;list-style-type:none">
+            <a style="text-decoration:none" href="/Product/Index">Tüm Verileri Göster</a>
+        </li>
+        <li style="margin-right:40px;list-style-type:none">
+            <input id="GetByIdProduct" placeholder="Id Giriniz" />
+            <button onclick="GetByIdProduct('GetByIdProduct')">Girilne Id ye Ait Product Getir</button>
+        </li>
+        <li style="margin-right:40px;list-style-type:none">
+            <input id="DeleteIdProduct" placeholder="Id Giriniz" />
+            <button onclick="DeleteProduct('DeleteIdProduct')">Girilne Id ye Ait Product Sil</button>
+        </li>
+        <li style="margin-right:40px;list-style-type:none">
+            <a href="/Product/AddProduct" style="text-decoration:none">Product Ekle</a>
+        </li>
+        <li style="list-style-type:none">
+            <a href="/Product/UpdateProduct" style="text-decoration:none">Product Güncelle</a>
+        </li>
+    </ul>
+</div>
+
+<div style="margin-top:50px">
+    <div style="text-align:center;margin-bottom:50px">Category</div>
+    <ul class="d-flex">
+        <li style="margin-right:40px;list-style-type:none">
+            <a style="text-decoration:none" href="/Category/Index">Tüm Verileri Göster</a>
+        </li>
+        <li style="margin-right:40px;list-style-type:none">
+            <input id="GetByIdCategory" placeholder="Id Giriniz" />
+            <button onclick="GetByIdCategory('GetByIdCategory')">Girilne Id ye Ait Category Getir</button>
+        </li>
+        <li style="margin-right:40px;list-style-type:none">
+            <input id="DeleteIdCategory" placeholder="Id Giriniz" />
+            <button onclick="DeleteCategory('DeleteIdCategory')">Girilne Id ye Ait Category Sil</button>
+        </li>
+        <li style="margin-right:40px;list-style-type:none">
+            <a href="/Category/AddCategory" style="text-decoration:none">Category Ekle</a>
+        </li>
+        <li style="list-style-type:none">
+            <a href="/Category/UpdateCategory" style="text-decoration:none">Category Güncelle</a>
+        </li>
+    </ul>
+</div>
+
+
+<div style="margin-top:50px">
+    <div style="text-align:center;margin-bottom:50px">Employee</div>
+    <ul class="d-flex">
+        <li style="margin-right:40px;list-style-type:none">
+            <a style="text-decoration:none" href="/Employee/Index">Tüm Verileri Göster</a>
+        </li>
+        <li style="margin-right:40px;list-style-type:none">
+            <input id="GetByIdEmployee" placeholder="Id Giriniz" />
+            <button onclick="GetByIdEmployee('GetByIdEmployee')">Girilne Id ye Ait Employee Getir</button>
+        </li>
+        <li style="margin-right:40px;list-style-type:none">
+            <input id="DeleteIdEmployee" placeholder="Id Giriniz" />
+            <button onclick="DeleteEmployee('DeleteIdEmployee')">Girilne Id ye Ait Employee Sil</button>
+        </li>
+        <li style="margin-right:40px;list-style-type:none">
+            <a href="/Employee/AddEmployee" style="text-decoration:none">Employee Ekle</a>
+        </li>
+        <li style="list-style-type:none">
+            <a href="/Employee/UpdateEmployee" style="text-decoration:none">Employe Güncelle</a>
+        </li>
+    </ul>
+</div>
+
+
+<div style="margin-top:50px">
+    <div style="text-align:center;margin-bottom:50px">Supplier</div>
+    <ul class="d-flex">
+        <li style="margin-right:40px;list-style-type:none">
+            <a style="text-decoration:none" href="/Supplier/Index">Tüm Verileri Göster</a>
+        </li>
+        <li style="margin-right:40px;list-style-type:none">
+            <input id="GetByIdSupplier" placeholder="Id Giriniz" />
+            <button onclick="GetByIdSupplier('GetByIdSupplier')">Girilne Id ye Ait Supplier Getir</button>
+        </li>
+        <li style="margin-right:40px;list-style-type:none">
+            <input id="DeleteIdSupplier" placeholder="Id Giriniz" />
+            <button onclick="DeleteSupplier('DeleteIdSupplier')">Girilne Id ye Ait Supplier Sil</button>
+        </li>
+        <li style="margin-right:40px;list-style-type:none">
+            <a href="/Supplier/AddSupplier" style="text-decoration:none">Supplier Ekle</a>
+        </li>
+        <li style="list-style-type:none">
+            <a href="/Supplier/UpdateSupplier" style="text-decoration:none">Supplier Güncelle</a>
+        </li>
+    </ul>
+</div>
+<div style="margin-top:50px">
+    <div style="text-align:center;margin-bottom:50px">Shipper</div>
+    <ul class="d-flex">
+        <li style="margin-right:40px;list-style-type:none">
+            <a style="text-decoration:none" href="/Shipper/Index">Tüm Verileri Göster</a>
+        </li>
+        <li style="margin-right:40px;list-style-type:none">
+            <input id="GetByIdShipper" placeholder="Id Giriniz" />
+            <button onclick="GetByIdShipper('GetByIdShipper')">Girilne Id ye Ait Shipper Getir</button>
+        </li>
+        <li style="margin-right:40px;list-style-type:none">
+            <input id="DeleteIdShipper" placeholder="Id Giriniz" />
+            <button onclick="DeleteShipper('DeleteIdShipper')">Girilne Id ye Ait Shipper Sil</button>
+        </li>
+        <li style="margin-right:40px;list-style-type:none">
+            <a href="/Shipper/AddShipper" style="text-decoration:none">Shipper Ekle</a>
+        </li>
+        <li style="list-style-type:none">
+            <a href="/Shipper/UpdateShipper" style="text-decoration:none">Shipper Güncelle</a>
+        </li>
+    </ul>
+</div>
+
+
+
+
+
+

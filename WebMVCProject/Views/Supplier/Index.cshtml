@@ -1,0 +1,22 @@
+﻿@using ModelLayer.Entities
+@using ModelLayer.SuppliersEntities
+@model List<Suppliers>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@foreach (var item in Model)
+{
+    <p>Id : @item.Id</p>
+    <p>Company Name : @item.CompanyName</p>
+    <p>Contact Name : @item.ContactName</p>
+    <p>Contact Title : @item.ContactTitle</p>
+    <p>Adress Street : @item.Address.Street</p>
+    <p>Adress City : @item.Address.City</p>
+    <p>Adress Region : @item.Address.Region</p>
+    <p>Adress Country : @item.Address.Country</p>
+    <p>Adress Phone : @item.Address.Phone</p>
+    <p>--------------------------------------------</p>
+}
+

@@ -1,0 +1,18 @@
+﻿@using ModelLayer.Entities
+@using ModelLayer.SuppliersEntities
+@model Suppliers
+@{
+    ViewData["Title"] = "GetById";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<p>Id : @Model.Id</p>
+<p>Company Name : @Model.CompanyName</p>
+<p>Contact Name : @Model.ContactName</p>
+<p>Contact Title : @Model.ContactTitle</p>
+<p>Adress Street : @Model.Address.Street</p>
+<p>Adress City : @Model.Address.City</p>
+<p>Adress Region : @Model.Address.Region</p>
+<p>Adress Country : @Model.Address.Country</p>
+<p>Adress Phone : @Model.Address.Phone</p>
+

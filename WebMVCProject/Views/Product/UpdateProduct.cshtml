@@ -1,0 +1,25 @@
+﻿
+@{
+    ViewData["Title"] = "UpdateProduct";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<input style="margin-bottom:20px" id="AddProductId" class="w-100" placeholder=Güncellencek "Product Id" />
+<input style="margin-bottom:20px" id="AddProductSupplierId" class="w-100" placeholder="Supplier Id" />
+<input style="margin-bottom:20px" id="AddProductCategoryId" class="w-100" placeholder="Category Id" />
+<input style="margin-bottom:20px" id="AddProductQuantityPerUnit" class="w-100" placeholder="Quantity Per Unit" />
+<input style="margin-bottom:20px" id="AddProductUnitPrice" class="w-100" placeholder="Unit Price" />
+<input style="margin-bottom:20px" id="AddProductUnitsInStock" class="w-100" placeholder="Units In Stock" />
+<input style="margin-bottom:20px" id="AddProductUnitsOnOrder" class="w-100" placeholder="Units On Order" />
+<input style="margin-bottom:20px" id="AddProductReorderLevel" class="w-100" placeholder="Reorder Level" />
+<ul class="d-flex">
+    <li style="list-style-type:none">
+        Discontinued
+    </li>
+    <li style="list-style-type:none;margin-left:10px">
+        <input type="checkbox" style="margin-bottom:20px" id="AddProductDiscontinued" class="w-100" />
+    </li>
+</ul>
+<input style="margin-bottom:20px" id="AddProductName" class="w-100" placeholder="Product Name" />
+<button class="w-100" onclick="UpdateProduct()">Product Güncelle</button>
+

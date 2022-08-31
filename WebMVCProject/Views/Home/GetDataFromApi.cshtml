@@ -1,0 +1,25 @@
+﻿@using ModelLayer.Entities
+@using ModelLayer.OrderEntities
+@model List<Orders>
+@{
+    ViewData["Title"] = "GetDataFromApi";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<ul>
+
+
+    @foreach (var item in Model)
+    {
+        @foreach (var item2 in item.Details)
+        {
+            <li>
+                @item2.ProductId
+            </li>
+        }
+
+    }
+
+
+</ul>
+
+

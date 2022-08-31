@@ -1,0 +1,15 @@
+﻿@using ModelLayer.Entities
+@using ModelLayer.ShippersEntities
+@model List<Shippers>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@foreach (var item in Model)
+{
+    <p>Id : @item.Id</p>
+    <p>Company Name : @item.CompanyName</p>
+    <p>Phone : @item.Phone</p>
+}
+

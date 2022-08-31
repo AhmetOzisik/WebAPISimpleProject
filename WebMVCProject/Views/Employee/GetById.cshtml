@@ -1,0 +1,26 @@
+﻿@using ModelLayer.Entities
+@using ModelLayer.EmployessEntities
+@model Employess
+@{
+    ViewData["Title"] = "GetById";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<p>Id : @Model.Id</p>
+<p>Last Name : @Model.LastName</p>
+<p>First Name : @Model.FirstName</p>
+<p>Title : @Model.Title</p>
+<p>Title Of Courtesy : @Model.TitleOfCourtesy</p>
+<p>Birth Date : @Model.BirthDate</p>
+<p>Hire Date : @Model.HireDate</p>
+<p>Address Street : @Model.Address.Street</p>
+<p>Address City : @Model.Address.City</p>
+<p>Address Region : @Model.Address.Region</p>
+<p>Address Country : @Model.Address.Country</p>
+<p>Address Phone : @Model.Address.Phone</p>
+<p>Notes : @Model.Notes</p>
+@foreach (var item in Model.TerritoryIds)
+{
+    <p>@item</p>
+}
+

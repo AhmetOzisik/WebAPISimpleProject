@@ -1,0 +1,34 @@
+﻿@using ModelLayer.Entities
+@using ModelLayer.EmployessEntities
+@model List<Employess>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@foreach (var item in Model)
+{
+    <p>Id : @item.Id</p>
+    <p>Last Name : @item.LastName</p>
+    <p>First Name : @item.FirstName</p>
+    <p>Title : @item.Title</p>
+    <p>Title Of Courtesy : @item.TitleOfCourtesy</p>
+    <p>Birth Date : @item.BirthDate</p>
+    <p>Hire Date : @item.HireDate</p>
+    <p>Address Street : @item.Address.Street</p>
+    <p>Address City : @item.Address.City</p>
+    <p>Address Region : @item.Address.Region</p>
+    <p>Address Country : @item.Address.Country</p>
+    <p>Address Phone : @item.Address.Phone</p>
+    <p>Notes : @item.Notes</p>
+    <p>----------------------------------------------</p>
+}
+@foreach (var item in Model)
+{
+    <p>Employee Id : @item.Id</p>
+    @foreach (var item2 in item.TerritoryIds)
+    {
+        <p>@item2</p>
+    }
+    <p>-----------------------------------</p>
+}

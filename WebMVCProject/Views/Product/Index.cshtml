@@ -1,0 +1,35 @@
+﻿@using ModelLayer.Entities
+@using ModelLayer.ProductsEntities
+@model List<Products>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@foreach (var item in Model)
+{
+    <p>Id : @item.Id</p>
+    <p>Supplier Id : @item.SupplierId</p>
+    <p>Category Id : @item.CategoryId</p>
+    <p>Quantity Per Unit : @item.QuantityPerUnit</p>
+    <p>Unit Price : @item.UnitPrice</p>
+    <p>Units In Stock : @item.UnitsInStock</p>
+    <p>Units On Order : @item.UnitsOnOrder</p>
+    <p>Reorder Level : @item.ReorderLevel</p>
+    <p>Discontinued : @item.Discontinued</p>
+    <p>Name : @item.Name</p>
+   @* <p>Supplier Id : @item?.Supplier.Id</p>
+    <p>Supplier Company Name : @item.Supplier.CompanyName</p>
+    <p>Supplier Contact Name : @item.Supplier.ContactName</p>
+    <p>Supplier Contact Title : @item.Supplier.ContactTitle</p>
+    <p>Supplier Address Street : @item.Supplier.Address.Street</p>
+    <p>Supplier Address City : @item.Supplier.Address.City</p>
+    <p>Supplier Address Region : @item.Supplier.Address.Region</p>
+    <p>Supplier Address Country : @item.Supplier.Address.Country</p>
+    <p>Supplier Address Phone : @item.Supplier.Address.Phone</p>
+    <p>Category Id : @item.Category.Id</p>
+    <p>Category Description : @item.Category.Description</p>
+    <p>Category Name: @item.Category.Name</p>*@
+    <p>-----------------------------------------------------------------</p>
+}
+

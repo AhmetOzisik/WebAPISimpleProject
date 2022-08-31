@@ -1,0 +1,43 @@
+﻿@using ModelLayer.Entities
+@using ModelLayer.OrderEntities
+@model List<Orders>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<ul>
+
+    @foreach (var item in Model)
+    {
+        <p>Id : @item.Id</p>
+        <p>Customer Id : @item.CustomerId</p>
+        <p>Employee Id : @item.EmployeeId</p>
+        <p>Order Date : @item.OrderDate</p>
+        <p>Required Date : @item.RequiredDate</p>
+        <p>Shipped Date : @item.Id</p>
+        <p>Ship Via : @item.ShipVia</p>
+        <p>Freight : @item.Freight</p>
+        <p>Ship Name : @item.ShipName</p>
+        <p>ShipAddress Street : @item.ShipAddress.Street</p>
+        <p>ShipAddress City : @item.ShipAddress.City</p>
+        <p>ShipAddress Region : @item.ShipAddress.Region</p>
+        <p>ShipAddress Country : @item.ShipAddress.Country</p>
+        <p>------------------------------------------------------------------------</p>
+    }
+    @foreach (var item in Model)
+    {
+
+        @foreach (var item2 in item.Details)
+        {
+            <p>Order Id : @item.Id</p>
+            <p>Details Product Id : @item2.ProductId</p>
+            <p>Details Unit Price : @item2.UnitPrice</p>
+            <p>Details Quantity : @item2.Quantity</p>
+            <p>Details Discount : @item2.Discount</p>
+        }
+        <p>--------------------------------------------------------------------------</p>
+    }
+
+</ul>
+

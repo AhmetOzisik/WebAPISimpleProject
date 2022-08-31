@@ -1,0 +1,19 @@
+﻿@using ModelLayer.Entities
+@using ModelLayer.ProductsEntities
+@model Products
+@{
+    ViewData["Title"] = "GetById";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<p>Id : @Model.Id</p>
+<p>Supplier Id : @Model.SupplierId</p>
+<p>Category Id : @Model.CategoryId</p>
+<p>Quantity Per Unit : @Model.QuantityPerUnit</p>
+<p>Unit Price : @Model.UnitPrice</p>
+<p>Units In Stock : @Model.UnitsInStock</p>
+<p>Units On Order : @Model.UnitsOnOrder</p>
+<p>Reorder Level : @Model.ReorderLevel</p>
+<p>Discontinued : @Model.Discontinued</p>
+<p>Name : @Model.Name</p>
+

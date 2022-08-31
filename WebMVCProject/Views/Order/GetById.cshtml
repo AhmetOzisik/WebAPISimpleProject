@@ -1,0 +1,28 @@
+﻿@using ModelLayer.Entities
+@using ModelLayer.OrderEntities
+@model Orders
+@{
+    ViewData["Title"] = "GetById";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<p>Id : @Model.Id</p>
+<p>Customer Id : @Model.CustomerId</p>
+<p>Employee Id : @Model.EmployeeId</p>
+<p>Order Date : @Model.OrderDate</p>
+<p>Required Date : @Model.RequiredDate</p>
+<p>Shipped Date : @Model.ShippedDate</p>
+<p>Ship Via : @Model.ShipVia</p>
+<p>Freight : @Model.Freight</p>
+<p>Ship Name : @Model.ShipName</p>
+<p>ShipAddress Street : @Model.ShipAddress.Street</p>
+<p>ShipAddress City : @Model.ShipAddress.City</p>
+<p>ShipAddress Region : @Model.ShipAddress.Region</p>
+<p>ShipAddress Country : @Model.ShipAddress.Country</p>
+@foreach (var item in Model.Details)
+{
+    <p>Details Product Id : @item.ProductId</p>
+    <p>Details Unit Price : @item.UnitPrice</p>
+    <p>Details Quantity : @item.Quantity</p>
+    <p>Details Discount : @item.Discount</p>
+}
